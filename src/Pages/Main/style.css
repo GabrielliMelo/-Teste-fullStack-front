@@ -5,3 +5,11 @@
   gap: 50px;
   flex-wrap: wrap;
 }
+
+.btn-poke {
+  color: rgb(75, 27, 27);
+  height: 86px;
+  background-image: url("../../Assets/pokeball.png");
+  background-size: cover;
+  align-items: flex-end;
+}
