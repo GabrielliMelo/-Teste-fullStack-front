@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./style.css";
 import HeaderPoke from "../../Components/HeaderPoke";
 import CardPoke from "../../Components/CardPoke";
+import InputPoke from "../../Components/InputPoke";
 // import api from "../../Services/api";
 import pokemonstTeste from "../../Services/MokePokemons";
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <HeaderPoke />
+      <InputPoke />
       <nav className="displayFlex">
         <h1 className="btn-poke displayFlex">Anterior</h1>
         <div className="container-cards displayFlex">
