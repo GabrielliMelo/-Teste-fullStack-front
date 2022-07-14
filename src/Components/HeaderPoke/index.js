@@ -1,10 +1,10 @@
-import './style.css';
+import "./style.css";
 
 function HeaderPoke() {
   return (
-    <div className="HeaderPoke">
-    
-    </div>
+    <header className="headerPoke displayFlex">
+      <h1>Pokemon</h1>
+    </header>
   );
 }
 
