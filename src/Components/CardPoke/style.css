@@ -7,6 +7,10 @@
   box-shadow: 5px 5px 5px black;
   position: relative;
   font-family: monospace;
+  transition: 0.8s ease-in;
+}
+.cardPoke:hover {
+  transform: scale(1.2);
 }
 .cardPoke h2 {
   color: black;
