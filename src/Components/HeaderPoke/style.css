@@ -1,0 +1,7 @@
+.headerPoke {
+  height: 100px;
+  justify-content: start;
+  padding: 0px 50px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
