@@ -1,6 +1,7 @@
 .container-cards {
-  height: 100vh;
-  padding: 50px 0px;
-  align-items: flex-start;
-  gap: 20px;
+  height: 50vh;
+  max-width: 70%;
+  padding: 50px 50px;
+  gap: 50px;
+  flex-wrap: wrap;
 }
