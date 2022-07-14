@@ -6,7 +6,12 @@ function App() {
   return (
     <div className="App">
       <HeaderPoke />
-      <CardPoke />
+      <div className="container-cards displayFlex">
+        <CardPoke />
+        <CardPoke />
+        <CardPoke />
+        <CardPoke />
+      </div>
     </div>
   );
 }

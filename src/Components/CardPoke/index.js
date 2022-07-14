@@ -1,22 +1,26 @@
 import "./style.css";
-import imgTeste from "../../Assets/charmeleon-teste.jpeg";
+import imgTest from "../../Assets/charmeleon-teste.jpeg";
+import pokeBall from "../../Assets/pokeball.png";
 
 function CardPoke() {
   return (
-    <div className="cardPoke">
+    <div className="cardPoke displayFlex">
       <h2>Charmeleon</h2>
-      <img src={imgTeste} alt="pokemon" />
+      <img className="img-pokeball" src={pokeBall} alt="poke-ball" />
+      <img className="img-poke" src={imgTest} alt="pokemon" />
       {/* especie altura peso */}
-      <nav className="heigth-weight">
+      <nav className="section-info">
         <h3>
           <b>Especie:</b> teste
         </h3>
-        <span>
-          <b>Altura:</b> 0.7m
-        </span>
-        <span>
-          <b>Peso:</b> 69kg
-        </span>
+        <div className="heigth-weight displayFlex">
+          <span>
+            <b>Altura:</b> 0.7m
+          </span>
+          <span>
+            <b>Peso:</b> 69kg
+          </span>
+        </div>
       </nav>
     </div>
   );
