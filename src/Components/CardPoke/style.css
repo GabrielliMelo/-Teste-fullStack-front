@@ -1,0 +1,36 @@
+.cardPoke {
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 20px;
+  width: 15%;
+  min-height: 35%;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px black;
+  position: relative;
+  font-family: monospace;
+}
+.cardPoke h2 {
+  color: black;
+  width: 80%;
+}
+
+.img-poke {
+  width: 80%;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.img-pokeball {
+  width: 30%;
+  position: absolute;
+  top: -42px;
+  left: -25px;
+}
+
+.section-info {
+  width: 80%;
+}
+
+.heigth-weight {
+  width: 80%;
+  justify-content: space-between;
+}
