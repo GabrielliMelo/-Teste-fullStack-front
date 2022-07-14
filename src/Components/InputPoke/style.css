@@ -1,0 +1,16 @@
+.inputPoke {
+  padding: 20px 0px;
+  transition: 0.7s ease-in;
+}
+
+.inputPoke input {
+  all: unset;
+  padding: 10px 25px;
+  width: 30%;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 20px;
+}
+
+.inputPoke:hover {
+  transform: scale(1.1);
+}
