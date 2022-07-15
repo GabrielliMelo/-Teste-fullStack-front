@@ -12,6 +12,7 @@ function App() {
   const [page, setPage] = useState(1);
   const [name, setName] = useState("");
   const [modalCardPoke, setModalCardPoke] = useState(false);
+  console.log(name);
 
   const navigate = useNavigate();
 
@@ -46,7 +47,7 @@ function App() {
         <input
           type="text"
           placeholder="Buscar pokemon"
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => setName(e.target.value.toLowerCase())}
         />
         <button onClick={pokemonInfo}>Buscar</button>
       </div>
