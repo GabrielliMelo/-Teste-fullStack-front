@@ -17,7 +17,7 @@ function CardPoke({ name, species, sprintes, weight, height, onClick }) {
         </h3>
         <div className="heigth-weight displayFlex">
           <span>
-            <b>Altura:</b> {height}cm
+            <b>Altura:</b> 0.{height}m
           </span>
           <span>
             <b>Peso:</b> {weight}kg
