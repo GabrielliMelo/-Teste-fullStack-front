@@ -46,7 +46,7 @@ function App() {
         <input
           type="text"
           placeholder="Buscar pokemon"
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => setName(e.target.value.toLowerCase())}
         />
         <button onClick={pokemonInfo}>Buscar</button>
       </div>

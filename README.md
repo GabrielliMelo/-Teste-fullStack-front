@@ -61,6 +61,10 @@ http://localhost:3000
 - Lista paginda com 10 pokemons.
 - Filtro de busca de pokemon.
 
+# url deploy
+
+- https://willowy-lebkuchen-cef543.netlify.app/home
+
 ## Tecnologias
 
 - ReactJs
@@ -73,6 +77,7 @@ http://localhost:3000
 - Testes automatizados.
 - Autenticação.
 - Desenvolver em TypeScript.
+- filtro não retornar somente quando escreve o nome correto do pokemon.
 
 ## extra
 
