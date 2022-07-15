@@ -10,3 +10,9 @@
   box-shadow: 2px 2px 8px black;
   padding: 4px;
 }
+
+@media only screen and (max-width: 577px) {
+  .home-header {
+    font-size: 1.3rem;
+  }
+}
