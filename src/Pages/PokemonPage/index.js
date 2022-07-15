@@ -39,19 +39,19 @@ function PokemonPage() {
             0.{pokemonInfo.height}m
           </div>
           <div>
-            <ul>
-              <h2>Habilidades: </h2>
-              <li>
+            {/* <ul>
+              <h2>Habilidades: </h2> */}
+            {/* <li>
                 {pokemonInfo.abilities
                   ? pokemonInfo.abilities[0].ability.name
                   : ""}
               </li>
               <li>
-                {pokemonInfo.abilities
+                {pokemonInfo.abilities[1]
                   ? pokemonInfo.abilities[1].ability.name
                   : ""}
-              </li>
-            </ul>
+              </li> */}
+            {/* </ul> */}
           </div>
         </section>
         <img
