@@ -1,22 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 import HeaderPoke from "../../Components/HeaderPoke";
 import CardPoke from "../../Components/CardPoke";
 import InputPoke from "../../Components/InputPoke";
-// import api from "../../Services/api";
-import pokemonstTeste from "../../Services/MokePokemons";
+import api from "../../Services/api";
 
 function App() {
-  const [pokemonsData, setPokemonsData] = useState(pokemonstTeste);
+  const [pokemonsDataApi, setPokemonsDataApi] = useState([]);
+  const [page, setPage] = useState(1);
+
+  useEffect(() => {
+    const pagedListPokemon = async () => {
+      const response = await api.get(`pokemons?limit=10&page=${page}`);
+      setPokemonsDataApi(response.data);
+    };
+    pagedListPokemon();
+  }, [page]);
 
   return (
     <div className="App">
       <HeaderPoke />
       <InputPoke />
       <nav className="displayFlex">
-        <h1 className="btn-poke displayFlex">Anterior</h1>
+        <h1 className="btn-poke displayFlex" onClick={() => setPage(page - 1)}>
+          Anterior
+        </h1>
         <div className="container-cards displayFlex">
-          {pokemonsData.map((pokemon) => {
+          {pokemonsDataApi.map((pokemon) => {
             return (
               <CardPoke
                 name={pokemon.name}
@@ -28,7 +38,9 @@ function App() {
             );
           })}
         </div>
-        <h1 className="btn-poke displayFlex">Proxima</h1>
+        <h1 className="btn-poke displayFlex" onClick={() => setPage(page + 1)}>
+          Proxima
+        </h1>
       </nav>
     </div>
   );
