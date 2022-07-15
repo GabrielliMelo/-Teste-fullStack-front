@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# konv-bank-front
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sobre o Projeto
 
-## Available Scripts
+    Frontend criado para fazer integracão com a API - back- disponivel em: https://github.com/GabrielliMelo/back - aplicação para listagem e informação de pokemon(s).
 
-In the project directory, you can run:
+# Instruções para rodar a aplicação
 
-### `npm start`
+- Primeiro: clone o repositorio:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```shell
+$ git clone git@github.com:GabrielliMelo/front.git
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Segundo: instale as dependencias
 
-### `npm test`
+```shell
+$ yarn
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Or:
 
-### `npm run build`
+```shell
+$ npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Para iniciar a execução do aplicativo:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```shell
+$ yarn start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Or:
 
-### `npm run eject`
+```
+$ npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### .env
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Nesse arquivo você configura as variaveis de ambiente. Utilize os nomes das keys e coloque os valores referente ao que esta configurado na sua maquina.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| key               | description       | default                                     |
+| ----------------- | ----------------- | ------------------------------------------- |
+| REACT_APP_URL_API | url deploy heroku | https://back-pokemon-simbiox.herokuapp.com/ |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Testando
 
-## Learn More
+- Se o heroku nao estiver respondendo corretamente utilize a api localmente - https://github.com/GabrielliMelo/back (seguindo passo a passo do Reame.md)- se não utilizar no .env a url do deploy do heroku - https://back-pokemon-simbiox.herokuapp.com/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Tu ok para fazer os testes da funcionalidades.
 
-### Code Splitting
+- A aplicação será iniciada na porta 3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+http://localhost:3000
 
-### Analyzing the Bundle Size
+# Funcionalidades
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Lista paginda com 10 pokemons.
+- Filtro de busca de pokemon.
 
-### Making a Progressive Web App
+## Tecnologias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- ReactJs
+- JavaScript
+- React-router-dom
+- dotenv
 
-### Advanced Configuration
+## Pontos de melhoria
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Testes automatizados.
+- Autenticação.
+- Desenvolver em TypeScript.
 
-### Deployment
+## extra
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Paginação com 10 itens por página;
+- Cards com id, nome, imagem, titulo;
+- Tratar os itens sem imagens, utilizando imagem padrão;
+- Filtro de busca de pokemon.
+- responsividade
+- deploy aplicação
+- Página de perfil para os personagens
 
-### `npm run build` fails to minify
+## Desenvolvedora
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```js
+{
+nome: "Gabrielli Melo da silva Borges",
+Idade: 23,
+Nivel Atual: "Júnior",
+Competências: [
+	"HTLM", "CSS","JavaScript", "NodeJs",
+	"ReactJs", "Java", "Spring Boot",
+	"Docker", "AWS", "PostgreSQL",
+	"MySQL", "Redis", "API Rest",
+	"Scrum", "Kanbam", "Git/GitFlow"
+],
+Habilidades: [
+	"Comunicação", "Empatia", "Trabalho em equipe",
+	"Positividade", "Proatividade",
+	"Resolução de problemas", "...etc"
+],
+Linkdln: "https://www.linkedin.com/in/gabriellimeloborges/",
+GitHub: "https://github.com/GabrielliMelo/"
+}
+```
