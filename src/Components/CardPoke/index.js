@@ -1,9 +1,9 @@
 import "./style.css";
 import pokeball from "../../Assets/pokeball.png";
 
-function CardPoke({ name, species, sprintes, weight, height }) {
+function CardPoke({ name, species, sprintes, weight, height, onClick }) {
   return (
-    <div className="cardPoke displayFlex">
+    <div className="cardPoke displayFlex" onClick={() => onClick(name)}>
       <h2>{name}</h2>
       <img
         className="img-poke"
