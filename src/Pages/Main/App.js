@@ -22,7 +22,10 @@ function App() {
       <HeaderPoke />
       <InputPoke />
       <nav className="displayFlex">
-        <h1 className="btn-poke displayFlex" onClick={() => setPage(page - 1)}>
+        <h1
+          className="btn-poke displayFlex"
+          onClick={() => setPage(page === 1 ? 1 : page - 1)}
+        >
           Anterior
         </h1>
         <div className="container-cards displayFlex">
