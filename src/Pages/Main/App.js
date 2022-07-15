@@ -6,6 +6,7 @@ import PokemonPage from "../PokemonPage";
 function Main() {
   return (
     <Routes>
+      <Route path="/" element={<Home />} exact />
       <Route path="/home" element={<Home />} exact />
       <Route path="/pokemons/:pokemon" element={<PokemonPage />} />
     </Routes>
