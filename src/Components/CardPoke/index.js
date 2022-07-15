@@ -1,10 +1,15 @@
 import "./style.css";
+import pokeball from "../../Assets/pokeball.png";
 
-function CardPoke({ name, species, sprintes, weight, height }) {
+function CardPoke({ name, species, sprintes, weight, height, onClick }) {
   return (
-    <div className="cardPoke displayFlex">
+    <div className="cardPoke displayFlex" onClick={() => onClick(name)}>
       <h2>{name}</h2>
-      <img className="img-poke" src={sprintes} alt="pokemon" />
+      <img
+        className="img-poke"
+        src={sprintes ? sprintes : pokeball}
+        alt="pokemon"
+      />
       {/* especie altura peso */}
       <nav className="section-info">
         <h3>

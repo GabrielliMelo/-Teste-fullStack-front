@@ -1,0 +1,11 @@
+.page-poke {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 50%;
+  box-shadow: 2px 2px 8px black;
+}
+.page-poke img {
+  width: 400px;
+}

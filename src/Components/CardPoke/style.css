@@ -7,6 +7,10 @@
   box-shadow: 5px 5px 5px black;
   position: relative;
   font-family: monospace;
+  transition: 0.4s ease-in;
+}
+.cardPoke:hover {
+  transform: scale(1.2);
 }
 .cardPoke h2 {
   color: black;
@@ -14,7 +18,7 @@
 }
 
 .img-poke {
-  width: 80%;
+  width: 150px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 20px;
 }

@@ -1,7 +1,12 @@
 .headerPoke {
   height: 100px;
-  justify-content: start;
+  justify-content: space-between;
   padding: 0px 50px;
   background-color: rgb(255, 0, 0);
   color: white;
+}
+
+.home-header {
+  box-shadow: 2px 2px 8px black;
+  padding: 4px;
 }
