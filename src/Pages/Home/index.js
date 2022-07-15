@@ -12,7 +12,6 @@ function App() {
   const [page, setPage] = useState(1);
   const [name, setName] = useState("");
   const [modalCardPoke, setModalCardPoke] = useState(false);
-  console.log(name);
 
   const navigate = useNavigate();
 
