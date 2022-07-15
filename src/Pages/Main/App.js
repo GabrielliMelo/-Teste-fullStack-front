@@ -9,12 +9,11 @@ function App() {
   const [pokemonsDataApi, setPokemonsDataApi] = useState([]);
   const [page, setPage] = useState(1);
 
-  const pagedListPokemon = async () => {
-    const response = await api.get(`pokemons?limit=10&page=${page}`);
-    setPokemonsDataApi(response.data);
-  };
-
   useEffect(() => {
+    const pagedListPokemon = async () => {
+      const response = await api.get(`pokemons?limit=10&page=${page}`);
+      setPokemonsDataApi(response.data);
+    };
     pagedListPokemon();
   }, [page]);
 
